@@ -17,6 +17,6 @@ class Triangle
       t = :scalene
     end
     t
-    binding.pry
+    #binding.pry
   end
 end
