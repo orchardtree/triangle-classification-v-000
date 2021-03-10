@@ -9,10 +9,10 @@ class Triangle
   def kind
     if @side_1 == @side_2 && @side_1 == @side_3
       :equilateral
-    elsif @side1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_3
-      :scalene
     elsif @side1 == @side_2 || @side_1 == @side_3 || @side_2 == @side_3
       :isosceles
+    elsif @side1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_3
+      :scalene
     end
   end
 end
