@@ -8,6 +8,10 @@ class Triangle
   end
   
   def kind
+    begin 
+      raise TriangleError
+      rescue TriangleError => Error
+    end
     if @side_1 == @side_2 && @side_1 == @side_3
       :equilateral
     elsif @side_1 == @side_2 && @side_1 != @side_3 ||
@@ -16,8 +20,6 @@ class Triangle
       :isosceles
     elsif @side1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_3
       :scalene
-    end
-    begin 
     end
   end
   
