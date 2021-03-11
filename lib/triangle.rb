@@ -31,7 +31,7 @@ class Triangle
   
   class TriangleError < StandardError
     def message 
-  "Triangles with no size are illegal. Triangles with negative sides are illegal. Triangles violating triangle inequality are illegal."
+    "Triangles with no size are illegal. Triangles with negative sides are illegal. Triangles violating triangle inequality are illegal."
     end
   end
 end
