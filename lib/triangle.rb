@@ -20,7 +20,6 @@ class Triangle
       @side_2 = side_2
       @side_3 = side_3
     end
-
   end
   
   def kind
