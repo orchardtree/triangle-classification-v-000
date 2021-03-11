@@ -3,11 +3,13 @@ class Triangle
   # write code here
   def initialize(side_1, side_2, side_3)
     if side_1 == 0 || side_2 == 0 || side_3 == 0
-      begin 
+      #begin 
         raise TriangleError
-          rescue TriangleError => error
-        puts error.message
-      end
+          #rescue TriangleError => error
+        
+        #puts error.message
+      
+      #end
     end
     @side_1 = side_1
     @side_2 = side_2
