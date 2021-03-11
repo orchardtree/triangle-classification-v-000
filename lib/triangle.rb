@@ -34,7 +34,7 @@ class Triangle
   
   class TriangleError < StandardError
     def message 
-      "Error #{side_1} #{side_2} #{side_3}"
+      "Error"
     end
   end
 end
