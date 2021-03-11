@@ -8,19 +8,14 @@ class Triangle
   end
   
   def kind
-    t = ""
     if @side_1 == @side_2 && @side_1 == @side_3
-      t = :equilateral
+      :equilateral
     elsif @side_1 == @side_2 && @side_1 != @side_3 ||
           @side_1 == @side_3 && @side_1 != @side_2 ||
           @side_2 == @side_3 && @side_2 != @side_1
-      t = :isosceles
+      :isosceles
     elsif @side1 != @side_2 && @side_1 != @side_3 && @side_2 != @side_3
-      t = :scalene
-    else 
-      t = "fail"
+      :scalene
     end
-    t
-    #binding.pry
   end
 end
